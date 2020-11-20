@@ -1,25 +1,24 @@
 package com.edu;
 
+import java.util.Scanner;
+
 public class Restart {
 
-    public String restart(String myNum, String comNum, int comN){
+    public void select(String myNum) {
 
-        ComnumCreate comnumCreate = new ComnumCreate();
+        Scanner scan = new Scanner(System.in);
 
         if (myNum.equals("1")) {
-            comNum = "";
-            comNum = comnumCreate.comNumCreate(comN,comNum);
-            System.out.println(comNum);
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
+
         } else if (myNum.equals("2")) {
             System.out.println("종료되었습니다.");
             System.exit(0);
+        } else {
+            System.out.println("잘못입력하셨습니다.\n게임을새로시작하려면 1,종료하려면" +
+                    " 2를입력하세요.");
+            myNum = scan.next();
+            select(myNum);
         }
 
-        return comNum;
     }
 }

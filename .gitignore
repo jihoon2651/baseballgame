@@ -3,17 +3,3 @@
 /out/
 /out/production/classes/
 /out/test/classes/
-build.gradle
-gradlew
-gradlew.bat
-settings.gradle
-새 텍스트 문서.txt
-.idea/.gitignore
-.idea/compiler.xml
-.idea/gradle.xml
-.idea/jarRepositories.xml
-.idea/misc.xml
-.idea/uiDesigner.xml
-.idea/vcs.xml
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties

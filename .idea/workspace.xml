@@ -5,51 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3c05459-ef55-4c8f-a532-65d15a32cedf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore.rej" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.3/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.5/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/edu/BaseballgameMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/edu/ComNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/edu/Hint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/edu/MyNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/com/edu/Restart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/MainTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/edu/BaseballgameMainTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/edu/BaseballgameTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/com/edu/CompareTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/ComNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/Hint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/MyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/Restart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/edu/HintTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/Restart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +19,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="baseballgame" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -137,6 +113,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HintTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baseballgame.test" />
       <extension name="coverage">
@@ -186,8 +175,7 @@
       <workItem from="1605420318103" duration="4909000" />
       <workItem from="1605492980426" duration="1759000" />
       <workItem from="1605500282304" duration="1043000" />
-      <workItem from="1605697462546" duration="9814000" />
-      <workItem from="1605851262181" duration="295000" />
+      <workItem from="1605697462546" duration="6931000" />
     </task>
     <task id="LOCAL-00001" summary="2020/11/15/16:20&#10;숫자야구게임 수정test">
       <created>1605425170567</created>
@@ -228,22 +216,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="451" y="57" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605421905194" />
-    <state width="1323" height="145" key="GridCell.Tab.0.bottom" timestamp="1605770842907">
+    <state width="1323" height="145" key="GridCell.Tab.0.bottom" timestamp="1605764459683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605770842907" />
-    <state width="1323" height="145" key="GridCell.Tab.0.center" timestamp="1605770842907">
+    <state width="1323" height="145" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
+    <state width="1323" height="145" key="GridCell.Tab.0.center" timestamp="1605764459683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605770842907" />
-    <state width="1323" height="145" key="GridCell.Tab.0.left" timestamp="1605770842906">
+    <state width="1323" height="145" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
+    <state width="1323" height="145" key="GridCell.Tab.0.left" timestamp="1605764459682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605770842906" />
-    <state width="1323" height="145" key="GridCell.Tab.0.right" timestamp="1605770842907">
+    <state width="1323" height="145" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605764459682" />
+    <state width="1323" height="145" key="GridCell.Tab.0.right" timestamp="1605764459683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605770842907" />
+    <state width="1323" height="145" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1605420281711">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
