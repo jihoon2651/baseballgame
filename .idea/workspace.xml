@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3c05459-ef55-4c8f-a532-65d15a32cedf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/Hint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/MyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/MyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/BaseballgameMainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/BaseballgameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/edu/MyNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/CompareTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/HintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/edu/HintTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +211,7 @@
       <workItem from="1605492980426" duration="1759000" />
       <workItem from="1605500282304" duration="1043000" />
       <workItem from="1605697462546" duration="6931000" />
-      <workItem from="1605932714988" duration="2316000" />
+      <workItem from="1605932714988" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="2020/11/15/16:20&#10;숫자야구게임 수정test">
       <created>1605425170567</created>

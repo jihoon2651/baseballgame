@@ -2,11 +2,13 @@ package com.edu;
 
 public class MyNumber {
 
+    public static final int MAX_COM_NUMBER_LENGTH = 3;
+
     public int validation(String myNum, int validationCnt){
 
         int myNumLength = myNum.length();
 
-        if (myNumLength > 3) {
+        if (myNumLength > MAX_COM_NUMBER_LENGTH) {
             validationCnt++;
         }
 
@@ -23,7 +25,7 @@ public class MyNumber {
             }
 
             if(validationCnt >= 1){
-                System.out.print("중복된 숫자나 3자리를 넘어갈 수 없습니다");
+                System.out.print("중복된 숫자나 3자리를 초과할 수 없습니다");
                 break;
             }
         }

@@ -2,7 +2,6 @@ package com.edu;
 
 public class Hint {
 
-
     public String hintInfo(String myNum, String comNum) {
 
         int strike = 0;
