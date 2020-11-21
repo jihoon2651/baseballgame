@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3c05459-ef55-4c8f-a532-65d15a32cedf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/BaseballgameMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/Restart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/Hint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/Hint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/MyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/MyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/BaseballgameMainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/BaseballgameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/edu/MyNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/CompareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/HintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/edu/HintTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +98,11 @@
       <recent name="com.edu" />
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.edu" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.BaseballgameMain">
@@ -113,20 +119,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HintTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyNumberTest.checkCorrectIsFalseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baseballgame.test" />
       <extension name="coverage">
         <pattern>
@@ -135,18 +139,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.edu" />
-      <option name="MAIN_CLASS_NAME" value="com.edu.HintTest" />
-      <option name="METHOD_NAME" value="test(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="com.edu.MyNumberTest" />
+      <option name="METHOD_NAME" value="checkCorrectIsFalseTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.테스트한다" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyNumberTest.checkCorrectIsTrueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baseballgame.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="테스트한다" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.edu.MyNumberTest" />
+      <option name="METHOD_NAME" value="checkCorrectIsTrueTest(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyNumberTest.myNumFalseValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="baseballgame.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.edu.MyNumberTest" />
+      <option name="METHOD_NAME" value="myNumFalseValidation(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyNumberTest.myNumTrueValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="baseballgame.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.edu.MyNumberTest" />
+      <option name="METHOD_NAME" value="myNumTrueValidation(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,8 +197,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BaseballgameMain" />
-        <item itemvalue="JUnit.HintTest.test" />
-        <item itemvalue="JUnit.MainTest.테스트한다" />
+        <item itemvalue="JUnit.MyNumberTest.myNumFalseValidation" />
+        <item itemvalue="JUnit.MyNumberTest.myNumTrueValidation" />
+        <item itemvalue="JUnit.MyNumberTest.checkCorrectIsTrueTest" />
+        <item itemvalue="JUnit.MyNumberTest.checkCorrectIsFalseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +220,7 @@
       <workItem from="1605492980426" duration="1759000" />
       <workItem from="1605500282304" duration="1043000" />
       <workItem from="1605697462546" duration="6931000" />
+      <workItem from="1605932714988" duration="2316000" />
     </task>
     <task id="LOCAL-00001" summary="2020/11/15/16:20&#10;숫자야구게임 수정test">
       <created>1605425170567</created>
@@ -200,14 +245,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="36" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1605697569728" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605852125781">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605852125781" />
     <state x="300" y="0" key="CommitChangelistDialog2" timestamp="1605425168319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="300" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605425168319" />
-    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1605423571382">
+    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1605868125497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605423571382" />
+    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605868125497" />
     <state x="491" y="180" width="263" height="240" key="Github.ShareDialog" timestamp="1605500376710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -216,38 +265,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="451" y="57" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1605421905194" />
-    <state width="1323" height="145" key="GridCell.Tab.0.bottom" timestamp="1605764459683">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom" timestamp="1605934836462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
-    <state width="1323" height="145" key="GridCell.Tab.0.center" timestamp="1605764459683">
+    <state width="1323" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605934836462" />
+    <state width="1323" height="188" key="GridCell.Tab.0.center" timestamp="1605934836461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
-    <state width="1323" height="145" key="GridCell.Tab.0.left" timestamp="1605764459682">
+    <state width="1323" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605934836461" />
+    <state width="1323" height="188" key="GridCell.Tab.0.left" timestamp="1605934836461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605764459682" />
-    <state width="1323" height="145" key="GridCell.Tab.0.right" timestamp="1605764459683">
+    <state width="1323" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605934836461" />
+    <state width="1323" height="188" key="GridCell.Tab.0.right" timestamp="1605934836462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="145" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605764459683" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1605420281711">
+    <state width="1323" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605934836462" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1605868798469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605420281711" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1605420281710">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605868798469" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1605868798469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605420281710" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1605420281710">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605868798469" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1605868798469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605420281710" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1605420281711">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605868798469" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1605868798469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605420281711" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605868798469" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1605421529313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -256,21 +305,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605425185013" />
-    <state x="454" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605422311662">
+    <state x="454" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605858600496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="454" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1605422311662" />
-    <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1605763845415">
+    <state x="454" y="183" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1605858600496" />
+    <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1605859502386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605763845415" />
+    <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605859502386" />
     <state x="375" y="0" key="new project wizard" timestamp="1605334773662">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1605334773662" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605500357995">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605934129895">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605500357995" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605934129895" />
   </component>
 </project>

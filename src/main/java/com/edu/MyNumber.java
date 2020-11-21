@@ -2,9 +2,13 @@ package com.edu;
 
 public class MyNumber {
 
-    public int overlapCheck(String myNum, int cnt){
+    public int validation(String myNum, int validationCnt){
 
         int myNumLength = myNum.length();
+
+        if (myNumLength > 3) {
+            validationCnt++;
+        }
 
         for (int i = 0; i < myNumLength; i++) {
             for (int j = 0; j < myNumLength; j++) {
@@ -14,16 +18,16 @@ public class MyNumber {
                 }
 
                 if (myNum.charAt(i) == myNum.charAt(j)) {
-                    cnt++;
+                    validationCnt++;
                 }
             }
 
-            if(cnt >= 1){
-                System.out.println("중복된 숫자는 입력할 수 없습니다.");
+            if(validationCnt >= 1){
+                System.out.print("중복된 숫자나 3자리를 넘어갈 수 없습니다");
                 break;
             }
         }
 
-        return cnt;
+        return validationCnt;
     }
 }

@@ -2,17 +2,19 @@ package com.edu;
 
 public class Hint {
 
-    public void hintInfo(String myNum, String comNum) {
+
+    public String hintInfo(String myNum, String comNum) {
 
         int strike = 0;
         int ball = 0;
-        int cnt = 0;
+        int validationCnt = 0;
         int myNumLength = myNum.length();
+        String hintAnswer = "";
         MyNumber myNumber = new MyNumber();
 
-        cnt = myNumber.overlapCheck(myNum,cnt);
+        validationCnt = myNumber.validation(myNum,validationCnt);
 
-        if (cnt < 1) {
+        if (validationCnt < 1) {
 
             for (int i = 0; i < myNumLength; i++) {
                 if (comNum.charAt(i) == myNum.charAt(i)) {
@@ -27,16 +29,18 @@ public class Hint {
             }
 
             if (ball == 0) {
-                System.out.println("낫싱");
+                hintAnswer = "낫싱";
             } else if (strike > 0 && strike - ball == 0) {
-                System.out.println(strike + " 스트라이크");
+                hintAnswer = strike + " 스트라이크";
             } else if (strike > 0 && ball > 0 && ball - strike > 0) {
-                System.out.println(strike + " 스트라이크 " + (ball - strike) + "볼");
+                hintAnswer = strike + " 스트라이크 " + (ball - strike) + "볼";
             } else {
-                System.out.println(ball + "볼");
+                hintAnswer = ball + "볼";
             }
 
         }
+
+        return hintAnswer;
 
     }
 }

@@ -7,16 +7,15 @@ public class BaseballgameMain {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        int comNum = 0;
         String comNumStr = "";
         String myNum = "";
+        String hintAnswer = "";
 
         Hint hint = new Hint();
         ComNumber comnumCreate = new ComNumber();
         Restart restart = new Restart();
 
         comNumStr = comnumCreate.comNumCreate();
-        System.out.println(comNumStr);
 
         while (true) {
             System.out.print("숫자를 입력해주세요 : ");
@@ -30,9 +29,9 @@ public class BaseballgameMain {
                 restart.select(myNum);
 
                 comNumStr = comnumCreate.comNumCreate();
-                System.out.println(comNumStr);
             } else {
-                hint.hintInfo(myNum,comNumStr);
+                hintAnswer = hint.hintInfo(myNum,comNumStr);
+                System.out.println(hintAnswer);
             }
         }
 
