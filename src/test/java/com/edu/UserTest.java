@@ -4,10 +4,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class UserTest<ExpectedException> {
+class UserTest {
     User user = new User();
 
     @ParameterizedTest
@@ -18,16 +16,12 @@ class UserTest<ExpectedException> {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"111", "2345", "abc", "1a2", "aaa4", ""})
+    @ValueSource(strings = {"1233", "2345", "abc", "1a2", "aaa4", ""})
     void validFalseTest(String myNumber) {
-        Throwable exception = assertThrows(
-                Exception.class,
-                () -> {
-                    throw new Exception("Exception message");
-                }
-        );
+
         try {
-            assertEquals(user.validUserNumber(myNumber), "Exception message");
+            boolean validation = user.validUserNumber(myNumber);
+            assertThat(validation).isFalse();
         } catch (Exception e) {
             e.printStackTrace();
         }

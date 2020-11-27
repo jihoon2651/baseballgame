@@ -5,12 +5,12 @@ public class Hint {
     private static final String STRIKE = " 스트라이크";
     private static final String BALL = "볼";
     private static final String HINT_NONE = "낫싱";
-    private static final String ERROR_MESSAGE = "1~9숫자를 중복없이 3자리를 입력해주세요.";
+    private static final String ERROR_MESSAGE = "1~9의 숫자를 중복없이 3자리를 입력해주세요.";
 
     static int strikeCnt = 0;
     static int ballCnt = 0;
 
-    public boolean giveHintInfo(String myNumber, String comNumber) throws Exception {
+    public boolean giveHintInfo(String myNumber, String comNumber)  {
         String hintAnswer = "";
         User user = new User();
 
