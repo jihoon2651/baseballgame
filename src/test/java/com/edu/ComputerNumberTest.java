@@ -16,7 +16,7 @@ class ComputerNumberTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"123", "56", "9", "abc", "a12", "ㅂㅁㅋ"})
+    @ValueSource(strings = {"1213", "56", "9", "abc", "a12", "ㅂㅁㅋ"})
     void comNumberFalseTest(String testNumber) {
 
         try {
