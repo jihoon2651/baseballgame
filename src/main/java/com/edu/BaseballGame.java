@@ -2,7 +2,7 @@ package com.edu;
 
 import java.util.Scanner;
 
-public class Baseballgame {
+public class BaseballGame {
 
     private static final String NUMBER_INPUT_MESSAGE = "숫자를 입력해주세요 : ";
     private static final String GAME_RESTART_MESSAGE = "3 스트라이크\n3개의 숫자를모두" +
@@ -34,7 +34,7 @@ public class Baseballgame {
     }
 
     public static void main(String[] args) {
-        Baseballgame baseballgame = new Baseballgame();
+        BaseballGame baseballgame = new BaseballGame();
         baseballgame.playBaseballGame();
     }
 

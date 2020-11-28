@@ -8,15 +8,15 @@ public class ComputerNumber {
 
     public String createComNumber() {
         String comNumber = "";
-        int comNum = 0;
+        int randomNumber = 0;
 
         for (int i = 0; i < COM_NUMBER_SIZE; i++) {
-            comNum = (int) (Math.random() * COM_NUMBER_END) + COM_NUMBER_START;
-            if (comNumber.contains(String.valueOf(comNum))) {
+            randomNumber = (int) (Math.random() * COM_NUMBER_END) + COM_NUMBER_START;
+            if (comNumber.contains(String.valueOf(randomNumber))) {
                 i--;
                 continue;
             }
-            comNumber += String.valueOf(comNum);
+            comNumber += String.valueOf(randomNumber);
         }
         return comNumber;
     }
