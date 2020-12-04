@@ -9,52 +9,52 @@ public class Hint {
 
     private int strikeCount = 0;
     private int ballCount = 0;
+    private String hintInfo = "";
 
-    public boolean giveHintInfo(String myNumber, String comNumber) {
-        String hintAnswer = "";
+    public String giveHintInfo(String myNumber, String comNumber) {
         User user = new User();
 
         try {
             user.validUserNumber(myNumber);
-            strikeCount = 0;
-            ballCount = 0;
-            strikeCount = giveStrikeCnt(myNumber, comNumber);
-            ballCount = giveBallCnt(myNumber, comNumber);
-            ballCount = ballCount - strikeCount;
-
-            if (ballCount == 0 && strikeCount == 0) {
-                hintAnswer = HINT_NONE;
-                System.out.println(hintAnswer);
-                return true;
-            }
-
-            if (strikeCount > 0 && ballCount == 0) {
-                hintAnswer = strikeCount + STRIKE;
-                System.out.println(hintAnswer);
-                return true;
-            }
-
-            if (strikeCount > 0 && ballCount > 0) {
-                hintAnswer = strikeCount + STRIKE + " " + ballCount + BALL;
-                System.out.println(hintAnswer);
-                return true;
-            }
-
-            if (ballCount > 0 && strikeCount == 0) {
-                hintAnswer = ballCount + BALL;
-                System.out.println(hintAnswer);
-                return true;
-            }
+            hintInfo = giveTrueHint(myNumber, comNumber);
+            return hintInfo;
 
         } catch (IllegalArgumentException e) {
-            System.out.println(ERROR_MESSAGE);
-            return false;
+            System.out.print(ERROR_MESSAGE);
+            return "";
         }
-
-        return true;
     }
 
-    public int giveStrikeCnt(String myNumber, String comNumber) {
+    public String giveTrueHint(String myNumber, String comNumber) {
+        strikeCount = 0;
+        ballCount = 0;
+        strikeCount = giveStrikeCount(myNumber, comNumber);
+        ballCount = giveBallCount(myNumber, comNumber, strikeCount);
+
+        if (ballCount == 0 && strikeCount == 0) {
+            hintInfo = HINT_NONE;
+            return hintInfo;
+        }
+
+        if (strikeCount > 0 && ballCount == 0) {
+            hintInfo = strikeCount + STRIKE;
+            return hintInfo;
+        }
+
+        if (strikeCount > 0 && ballCount > 0) {
+            hintInfo = strikeCount + STRIKE + " " + ballCount + BALL;
+            return hintInfo;
+        }
+
+        if (ballCount > 0 && strikeCount == 0) {
+            hintInfo = ballCount + BALL;
+            return hintInfo;
+        }
+
+        return hintInfo;
+    }
+
+    public int giveStrikeCount(String myNumber, String comNumber) {
         int myNumberLength = myNumber.length();
 
         for (int i = 0; i < myNumberLength; i++) {
@@ -65,7 +65,7 @@ public class Hint {
         return strikeCount;
     }
 
-    public int giveBallCnt(String myNumber, String comNumber) {
+    public int giveBallCount(String myNumber, String comNumber, int strikeCount) {
         int myNumberLength = myNumber.length();
 
         for (int i = 0; i < myNumberLength; i++) {
@@ -73,6 +73,6 @@ public class Hint {
                 ballCount++;
             }
         }
-        return ballCount;
+        return (ballCount - strikeCount);
     }
 }

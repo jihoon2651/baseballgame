@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 class ComputerNumberTest {
@@ -19,8 +19,9 @@ class ComputerNumberTest {
     @ParameterizedTest
     @ValueSource(strings = {"123", "456", "789", "678", "146", "964"})
     void comNumberTrueTest(String testNumber) {
-        boolean trueTest = user.validUserNumber(testNumber);
-        assertThat(trueTest).isTrue();
+        assertThatCode(() -> {
+            user.validUserNumber(testNumber);
+        }).doesNotThrowAnyException();
     }
 
     @ParameterizedTest

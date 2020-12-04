@@ -8,10 +8,9 @@ public class ComputerNumber {
 
     public String createComNumber() {
         String comNumber = "";
-        int randomNumber = 0;
 
         for (int i = 0; i < COM_NUMBER_SIZE; i++) {
-            randomNumber = (int) (Math.random() * COM_NUMBER_END) + COM_NUMBER_START;
+            int randomNumber = (int) (Math.random() * COM_NUMBER_END) + COM_NUMBER_START;
             if (comNumber.contains(String.valueOf(randomNumber))) {
                 i--;
                 continue;
