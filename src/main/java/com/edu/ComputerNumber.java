@@ -10,7 +10,7 @@ public class ComputerNumber {
         String comNumber = "";
 
         for (int i = 0; i < COM_NUMBER_SIZE; i++) {
-            int randomNumber = (int) (Math.random() * COM_NUMBER_END) + COM_NUMBER_START;
+            int randomNumber = COM_NUMBER_START + (int) (Math.random() * COM_NUMBER_END);
             if (comNumber.contains(String.valueOf(randomNumber))) {
                 i--;
                 continue;
