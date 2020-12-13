@@ -4,32 +4,27 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.assertj.core.api.Assertions.assertThatCode;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class ComputerNumberTest {
 
-    private User user;
+    private ComputerNumber computerNumber;
 
     @BeforeEach
     void setUp() {
-        user = new User();
+        computerNumber = new ComputerNumber();
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"123", "456", "789", "678", "146", "964"})
-    void comNumberTrueTest(String testNumber) {
-        assertThatCode(() -> {
-            user.validUserNumber(testNumber);
-        }).doesNotThrowAnyException();
+    void comNumberTrueTest(String computerNumberTest) {
+        assertThat(computerNumber.checkComNumber(computerNumberTest)).isTrue();
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"1213", "56", "9", "abc", "a12", "ㅂㅁㅋ"})
-    void comNumberFalseTest(String testNumber) {
-        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(
-                () -> user.validUserNumber(testNumber)
-        );
+    @ValueSource(strings = {"1-", "78]", "bv@", "abc", "a12", "ㅂㅁㅋ"})
+    void comNumberFalseTest(String computerNumberTest) {
+        assertThat(computerNumber.checkComNumber(computerNumberTest)).isFalse();
     }
 
 }

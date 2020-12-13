@@ -18,16 +18,15 @@ class UserTest {
     @ParameterizedTest
     @ValueSource(strings = {"123", "486", "387", "267", "954", "527"})
     void validTrueTest(String testNumber) {
-        assertThatCode(() -> {
-            user.validUserNumber(testNumber);
-        }).doesNotThrowAnyException();
+        assertThatCode(() ->
+                user.checkValidUserNumber(testNumber)).doesNotThrowAnyException();
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"1233", "2345", "abc", "1a2", "aaa4", ""})
     void validFalseTest(String testNumber) {
         assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(
-                () -> user.validUserNumber(testNumber)
+                () -> user.checkValidUserNumber(testNumber)
         );
     }
 

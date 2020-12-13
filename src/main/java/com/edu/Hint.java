@@ -2,21 +2,16 @@ package com.edu;
 
 public class Hint {
 
-    private static final String STRIKE = " 스트라이크";
-    private static final String BALL = "볼";
-    private static final String HINT_NONE = "낫싱";
-    private static final String ERROR_MESSAGE = "1~9의 숫자를 중복없이 3자리를 입력해주세요.";
+    public static final String ERROR_MESSAGE = "1~9의 숫자를 중복없이 3자리를 입력해주세요.";
 
-    private int strikeCount = 0;
-    private int ballCount = 0;
     private String hintInfo = "";
 
-    public String giveHintInfo(String myNumber, String comNumber) {
+    public String giveHintInfo(String userNumber, String comNumber) {
         User user = new User();
 
         try {
-            user.validUserNumber(myNumber);
-            hintInfo = giveTrueHint(myNumber, comNumber);
+            user.checkValidUserNumber(userNumber);
+            hintInfo = giveTrueHint(userNumber, comNumber);
             return hintInfo;
 
         } catch (IllegalArgumentException e) {
@@ -25,54 +20,68 @@ public class Hint {
         }
     }
 
-    public String giveTrueHint(String myNumber, String comNumber) {
-        strikeCount = 0;
-        ballCount = 0;
-        strikeCount = giveStrikeCount(myNumber, comNumber);
-        ballCount = giveBallCount(myNumber, comNumber, strikeCount);
+    public String giveTrueHint(String userNumber, String comNumber) {
+        int strikeCount = giveStrikeCount(userNumber, comNumber);
+        int ballCount = giveBallCount(userNumber, comNumber, strikeCount);
 
         if (ballCount == 0 && strikeCount == 0) {
-            hintInfo = HINT_NONE;
+            hintInfo = BallType.HINT_NONE.description;
             return hintInfo;
         }
 
         if (strikeCount > 0 && ballCount == 0) {
-            hintInfo = strikeCount + STRIKE;
+            hintInfo = strikeCount + BallType.STRIKIE.description;
             return hintInfo;
         }
 
         if (strikeCount > 0 && ballCount > 0) {
-            hintInfo = strikeCount + STRIKE + " " + ballCount + BALL;
+            hintInfo = strikeCount + BallType.STRIKIE.description +
+                    ballCount + BallType.BALL.description;
             return hintInfo;
         }
 
         if (ballCount > 0 && strikeCount == 0) {
-            hintInfo = ballCount + BALL;
+            hintInfo = ballCount + BallType.BALL.description;
             return hintInfo;
         }
 
         return hintInfo;
     }
 
-    public int giveStrikeCount(String myNumber, String comNumber) {
-        int myNumberLength = myNumber.length();
+    public int giveStrikeCount(String userNumber, String comNumber) {
+        int myNumberLength = userNumber.length();
+        int strikeCount = 0;
 
         for (int i = 0; i < myNumberLength; i++) {
-            if (comNumber.charAt(i) == myNumber.charAt(i)) {
+            if (comNumber.charAt(i) == userNumber.charAt(i)) {
                 strikeCount++;
             }
         }
         return strikeCount;
     }
 
-    public int giveBallCount(String myNumber, String comNumber, int strikeCount) {
-        int myNumberLength = myNumber.length();
+    public int giveBallCount(String userNumber, String comNumber, int strikeCount) {
+        int myNumberLength = userNumber.length();
+        int ballCount = 0;
 
         for (int i = 0; i < myNumberLength; i++) {
-            if (comNumber.contains(myNumber.substring(i, i + 1))) {
+            if (comNumber.contains(userNumber.substring(i, i + 1))) {
                 ballCount++;
             }
         }
         return (ballCount - strikeCount);
+    }
+
+    public enum BallType {
+        STRIKIE(" 스트라이크 "),
+        BALL("볼"),
+        HINT_NONE("낫싱"),
+        ;
+
+        private final String description;
+
+        BallType(String description) {
+            this.description = description;
+        }
     }
 }

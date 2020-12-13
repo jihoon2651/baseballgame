@@ -9,15 +9,37 @@ public class ComputerNumber {
     public String createComNumber() {
         String comNumber = "";
 
-        for (int i = 0; i < COM_NUMBER_SIZE; i++) {
-            int randomNumber = COM_NUMBER_START + (int) (Math.random() * COM_NUMBER_END);
+        while (comNumber.length() < COM_NUMBER_SIZE) {
+            int randomNumber = createRandomNumber();
+
             if (comNumber.contains(String.valueOf(randomNumber))) {
-                i--;
                 continue;
             }
-            comNumber += String.valueOf(randomNumber);
+
+            if (comNumber.length() < COM_NUMBER_SIZE) {
+                comNumber += String.valueOf(randomNumber);
+            }
         }
+
         return comNumber;
+    }
+
+    public int createRandomNumber() {
+        return COM_NUMBER_START + (int) (Math.random() * COM_NUMBER_END);
+    }
+
+    public boolean checkComNumber(String comNumber) {
+
+        for (int i = 0; i < comNumber.length(); i++) {
+
+            char[] ch = comNumber.toCharArray();
+
+            if (ch[i] < '1' || ch[i] > '9') {
+                return false;
+            }
+        }
+        return true;
+
     }
 
 }
